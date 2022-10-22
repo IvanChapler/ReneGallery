@@ -1,0 +1,31 @@
+.gallery{ 
+    min-height: 1100px;
+    background: url(../../images/bg2.jpg) (0px 40px / contain) no-repeat;
+    background-color: #000000;
+    padding: 60px 0 60px;
+    .title {
+        margin-top: 70px;
+        letter-spacing: 0.95rem;
+        span{
+            color: #000000;
+        }
+    }
+    &__wrapper {
+        max-width: 940px;
+        min-height: 900px;
+        padding: 40px 0;
+        display: grid;
+        grid-template: repeat(4, minmax(80px, auto)) / repeat(auto-fill, 260px);
+        gap: 40px;
+        justify-content: center;
+        background-color: #ffffff;
+        margin: 240px auto 0;
+       
+    }
+    &__img {
+        img {
+            max-width: 100%;
+        }
+    }
+    
+} 

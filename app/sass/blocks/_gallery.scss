@@ -1,0 +1,54 @@
+.gallery{ 
+    min-height: 1100px;
+    background: url(../../images/bg2.jpg) (0px 40px / contain) no-repeat;
+    background-color: #000000;
+    padding: 160px 0 100px;
+    .title {
+        letter-spacing: 0.95rem;
+        span{
+            color: #000000;
+        }
+    }
+    &__wrapper {
+        max-width: 940px;
+        min-height: 900px;
+        padding: 40px 0;
+        display: grid;
+        grid-template: repeat(4, minmax(80px, auto)) / repeat(auto-fill, 260px);
+        grid-auto-rows: minmax(80px, auto);
+        gap: 40px;
+        justify-content: center;
+        background-color: #ffffff;
+        margin: 210px auto 0;
+        
+    }
+    &__item:nth-child(5){
+        align-self: center;
+    }
+    &__item:nth-child(4){
+        align-self: end;
+    }
+    &__img {
+        display: block;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            object-fit: cover;
+            transition: 0.2s;
+            &:hover{
+                transform: scale(1.05);
+                transition: 0.2s;
+            }
+        }
+    }
+    &__title{
+        margin-top: 5px;
+        font-weight: 300;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        text-align: end;
+        letter-spacing: 0.2em;
+        color: rgb(78, 74, 74);
+    }
+    
+} 

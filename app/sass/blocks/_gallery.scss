@@ -43,12 +43,12 @@
     }
     &__title{
         margin-top: 5px;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 0.75rem;
         text-transform: uppercase;
         text-align: end;
         letter-spacing: 0.2em;
-        color: rgb(78, 74, 74);
+        color: $text-color;
     }
     
 } 

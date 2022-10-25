@@ -1,3 +1,4 @@
+/*IBM Plex Serif*/
 @font-face {
     font-family: 'IBM Plex Serif';
     src: local('../fonts/IBMPlexSerif-Thin'),
@@ -58,3 +59,88 @@
     font-display: swap;
 }
 
+
+/*Roboto*/
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+      url('../fonts/Roboto-Thin.woff2') format('woff2'),
+      url('../fonts/Roboto-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Light'), local('Roboto-Light'),
+      url('../fonts/Roboto-Light.woff2') format('woff2'),
+      url('../fonts/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular'),
+      url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular'),
+      url('../fonts/Roboto-Medium.woff2') format('woff2'),
+      url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/*Icomoon*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ertt47');
+    src:  url('../fonts/icomoon.eot?ertt47#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?ertt47') format('truetype'),
+      url('../fonts/icomoon.woff?ertt47') format('woff'),
+      url('../fonts/icomoon.svg?ertt47#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-telegram:before {
+    content: "\e900";
+  }
+  .icon-alternate_email:before {
+    content: "\e902";
+  }
+  .icon-pinterest-p:before {
+    content: "\e901";
+  }
+  .icon-vk:before {
+    content: "\e903";
+  }
+  .icon-github:before {
+    content: "\eab0";
+  }

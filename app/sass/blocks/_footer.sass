@@ -1,11 +1,11 @@
 .footer
     padding: 40px 80px 40px
-    height: 250px
+    min-height: 250px
     background: #000000
-    display: flex
-    justify-content: space-between
     &__wrapper
-        position: relative
+        display: flex
+        justify-content: space-between
+        min-height: 160px  
     &__slogan
         font-family: 'Roboto'
         font-weight: 500
@@ -14,20 +14,13 @@
         text-transform: uppercase
     &__subtitle
         display: block
-        margin-top: 10px
+        margin-top: 20px
         font-family: 'Roboto'
         color: darken(#ffffff, 30%) //#919496
         font-size: 1rem
         font-weight: 300
-    &__international
-        display: flex
-        position: absolute
-        bottom: 0
-    &__international-link
-        margin-left: 5px
-        color: #919496 //#919496 
-        font-size: 0.73rem 
-        
+        &:last-child
+            margin-top: 10px
     &__social
         margin-top: 5px
         margin-right: 30px
@@ -50,6 +43,13 @@
     &__social-item:last-child
         .footer__social-link:hover
             color: #1ed760
+
+    &__international
+        display: flex
+    &__international-link
+        margin-left: 5px
+        color: #919496 //#919496 
+        font-size: 0.73rem 
         
             
     

@@ -12,7 +12,7 @@
     &__wrapper {
         max-width: 940px;
         min-height: 900px;
-        padding: 40px 0;
+        padding: 40px;
         display: grid;
         grid-template: repeat(4, minmax(80px, auto)) / repeat(auto-fill, 260px);
         grid-auto-rows: minmax(80px, auto);

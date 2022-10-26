@@ -7,6 +7,20 @@
     background-size: 350px
     background-position: bottom
     background-position-x: 0%
+    position: relative
+    &__citation
+        display: none
+        position: absolute
+        font-weight: 100
+        width: 220px
+        letter-spacing: 0.1rem
+        word-spacing: 0.1rem
+        color: $text-color
+        left: 10%
+        top: 35px
+        span
+            font-weight: 200
+            
     &__grid-wrapper
         padding-left: 30px
         display: grid
@@ -21,7 +35,7 @@
             text-align: end
     &__img
         grid-area: image
-        max-width: 400px
+        max-width: 410px
         align-self: center
         justify-self: end
     &__title

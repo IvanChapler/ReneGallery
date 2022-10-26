@@ -1,0 +1,113 @@
+@media (max-width: 1200px)
+    .biography
+        &__img
+            width: 370px
+            justify-self: center
+@media (max-width: 992px)
+    .gallery
+        padding-top: 110px
+        .title
+            letter-spacing: 0.2rem
+        &__wrapper
+            margin-top: 120px
+            max-width: 645px
+        &__item:nth-child(3)
+            align-self: center
+
+    .biography
+        &__grid-wrapper
+            padding-left: 50px
+            padding-right: 50px
+            grid-template: repeat(2, minmax(260px, auto)) / minmax(auto, 350px) 400px
+            grid-template-areas: "biography image" "surrealism image"
+            justify-content: center
+        &__paragraph:nth-child(2)
+            text-align: start
+        &__text
+            font-size: 1rem
+        &__img
+            width: 80%
+            justify-self: end
+            align-self: start
+            
+    .footer
+        &__social
+            margin-right: 0
+@media (max-width: 768px)
+    .promo
+        &__img
+            width: 360px
+        &__header
+            padding-top: 218px
+            font-size: 45px
+    .biography
+        &__grid-wrapper
+            grid-template: repeat(2, minmax(260px, auto)) / repeat(2, auto)
+            grid-template-areas: "biography image" ". surrealism"
+        &__paragraph:nth-child(2)
+            text-align: end
+        &__img
+            width: 90%
+        &__title
+            font-size: 1.8rem
+    .footer
+        &__wrapper
+            justify-content: start
+            flex-direction: column
+        &__social
+            margin-top: 25px
+        &__international
+            margin-top: 40px
+@media (max-width: 578px)
+    .menu
+        display: none
+    .promo
+        min-height: 600px
+        &__img
+            width: 226px
+            margin-right: 14px
+        &__header
+            word-spacing: 0
+            margin-left: 0
+            font-size: 28px
+            padding-top: 140px
+    .gallery
+        background-position: 0 150px
+        .title
+            font-size: 49px
+            span
+                -webkit-text-stroke: 1px #ffffff
+        &__wrapper
+            padding: 30px
+            margin-top: 103px
+            max-width: 320px
+            gap: 30px
+    .biography
+        padding: 60px 0
+        &__citation
+            display: block
+        &__grid-wrapper
+            padding: 0
+            grid-template: repeat(3, minmax(160px, auto)) / auto
+            grid-template-areas: "image" "biography" "surrealism"
+            row-gap: 40px
+        &__paragraph
+            padding: 0 25px 0 15px
+        &__paragraph:nth-child(2)
+            text-align: start
+            align-self: stretch
+        &__img
+            width: 240px
+        &__title
+            font-size: 1.6rem
+    .footer
+        padding: 40px 30px
+        &__social-link
+            font-size: 20px
+            width: 44px
+            height: 44px
+        &__slogan
+            font-size: 1.3rem
+        &__subtitle
+            font-size: 0.85rem
+        

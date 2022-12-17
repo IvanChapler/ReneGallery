@@ -1,6 +1,6 @@
 .gallery{ 
     min-height: 1100px;
-    background: url(../../images/bg2.jpg) (0px 40px / contain) no-repeat;
+    background: url(../images/bg2.jpg) (0px 40px / contain) no-repeat;
     background-color: #000000;
     padding: 160px 0 100px;
     .title {
@@ -20,6 +20,7 @@
         justify-content: center;
         background-color: #ffffff;
         margin: 210px auto 0;
+        grid-auto-flow: dense;
         
     }
     &__item:nth-child(5){

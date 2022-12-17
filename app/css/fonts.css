@@ -104,43 +104,43 @@
 
 /*Icomoon*/
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?ertt47');
-    src:  url('../fonts/icomoon.eot?ertt47#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?ertt47') format('truetype'),
-      url('../fonts/icomoon.woff?ertt47') format('woff'),
-      url('../fonts/icomoon.svg?ertt47#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-telegram:before {
-    content: "\e900";
-  }
-  .icon-alternate_email:before {
-    content: "\e902";
-  }
-  .icon-pinterest-p:before {
-    content: "\e901";
-  }
-  .icon-vk:before {
-    content: "\e903";
-  }
-  .icon-github:before {
-    content: "\eab0";
-  }
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?9p4z6');
+  src:  url('../fonts/icomoon.eot?9p4z6#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?9p4z6') format('truetype'),
+    url('../fonts/icomoon.woff?9p4z6') format('woff'),
+    url('../fonts/icomoon.svg?9p4z6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-telegram:before {
+  content: "\e900";
+}
+.icon-vk:before {
+  content: "\e903";
+}
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-unlocked:before {
+  content: "\e990";
+}
+.icon-github:before {
+  content: "\eab0";
+}

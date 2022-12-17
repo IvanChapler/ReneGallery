@@ -29,6 +29,12 @@
             width: 80%
             justify-self: end
             align-self: start
+    .colors
+        &__wrapper
+            width: 700px  
+        &__title:active::after
+            opacity: 1
+            transition: opacity 0s ease
             
     .footer
         &__social
@@ -58,6 +64,9 @@
             margin-top: 25px
         &__international
             margin-top: 40px
+    .colors
+        &__wrapper
+            width: 100%
 @media (max-width: 578px)
     .menu
         display: none
@@ -100,6 +109,34 @@
             width: 240px
         &__title
             font-size: 1.6rem
+    .colors
+        &__wrapper
+            width: 100%
+            flex-flow: wrap column
+            height: 900px
+        &__col
+            flex: 1
+        &__title
+            font-size: 24px
+            &::after
+                font-size: 18px
+            &:active::after
+                opacity: 1
+                transition: opacity 0s ease
+        &__lock
+            font-size: 40px
+            &:active
+                opacity: 0.8
+        .icon-lock
+            display: block
+            text-align: center
+            transform: translateX(4px)
+            transition: 0s ease-in-out
+        .icon-unlocked
+            transition: 0s ease-in-out
+
+        
+        
     .footer
         padding: 40px 30px
         &__social-link

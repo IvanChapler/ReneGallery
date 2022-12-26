@@ -22,7 +22,7 @@ let lock = document.querySelectorAll('.colors__lock');
 //     })
 // })
 
-document.addEventListener('click', function (event) {
+document.addEventListener('click', function click(event) {
     let type = event.target.dataset.type;
 
     if (type === 'button' || event.target.tagName.toLowerCase() === 'span') {
@@ -113,7 +113,10 @@ function updateColorsHash (colors = []) {
 } 
 
 function getColorsHash () {
-    if (document.location.hash.length > 1) {
+    if (document.location.hash.length > 1 
+    && document.location.hash != '#colors' 
+    && document.location.hash != '#gallery' 
+    && document.location.hash != '#biography') {
         return document.location.hash.substring(1).split('-').map(item => '#' + item) 
     } else {
         return []
@@ -122,3 +125,41 @@ function getColorsHash () {
 
 setColor(true)
 
+
+{
+    let menu = document.getElementById('menu');
+
+    let prevScrollPos = window.scrollY;
+
+    window.onscroll = function () {
+        let currentScrollPos = window.scrollY;
+        
+        if (currentScrollPos > prevScrollPos) {
+            menu.style.top = '-' + window.getComputedStyle(menu).height;
+        } else {
+            menu.style.top = '0px';
+        }
+        
+        prevScrollPos = currentScrollPos;
+    }
+}
+
+function smoothScroll () {
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
+
+    for (let smoothLink of smoothLinks) {
+        smoothLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log(smoothLink)
+            const id = smoothLink.getAttribute('href').substring(1);
+            console.log(id)
+            document.getElementById(id).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    }
+
+}
+
+smoothScroll()

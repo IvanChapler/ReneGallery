@@ -8,7 +8,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin     = require('gulp-imagemin');
 const stable       = require('stable')
 // Не знаю что это, какая то обновленная сортировка массива, но из-за нее ошибка и она из ES6
-const del          = require('del')
+// const del          = require('del')
 
 
 function styles() {

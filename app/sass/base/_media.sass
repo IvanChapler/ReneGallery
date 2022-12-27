@@ -3,6 +3,7 @@
         &__img
             width: 370px
             justify-self: center
+
 @media (max-width: 992px)
     .gallery
         padding-top: 110px
@@ -39,6 +40,7 @@
     .footer
         &__social
             margin-right: 0
+
 @media (max-width: 768px)
     .promo
         &__img
@@ -67,20 +69,49 @@
     .colors
         &__wrapper
             width: 100%
+
 @media (max-width: 578px)
+    .menu__wrapper
+        flex-direction: column
+        background: darken($next-color, 15)
+        position: fixed
+        left: -100%
+        top: 0
+        height: 100vh
+        justify-content: center
+        width: 100%
+        &_active
+            left: 0
+            transition: 0.8s all
+
     .menu
-        display: none
+        justify-content: flex-start
+        height: 51px
+        &__item
+            margin-bottom: 50px
+            font-size: 1.4em
+            a
+                color: #ffffff
+
+    .hamburger
+        display: flex
+
+
     .promo
         min-height: 600px
         &__img
-            width: 246px
-            margin-right: 14px
+            max-width: 286px
+            margin: 0 auto
+            float: none
         &__header
             word-spacing: 0
-            margin-left: 0
-            font-size: 32px
-            padding-top: 150px
+            margin: 20px 20px 0 20px
+            padding: 0
+            font-size: 34px
             font-weight: 200
+            span
+                margin-left: 0px
+
     .gallery
         background-position: 0 150px
         .title
@@ -92,6 +123,7 @@
             margin-top: 103px
             max-width: 320px
             gap: 30px
+
     .biography
         padding: 60px 0
         &__citation
@@ -110,6 +142,7 @@
             width: 240px
         &__title
             font-size: 1.6rem
+
     .colors
         &__wrapper
             width: 100%
@@ -117,7 +150,7 @@
         &__col
             width: calc( 100% / 3 )
             flex: 1
-            min-height: 340px
+            min-height: 350px
             justify-content: space-between
         &__title
             font-size: 23px

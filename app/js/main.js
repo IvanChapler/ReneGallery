@@ -25,7 +25,7 @@ let lock = document.querySelectorAll('.colors__lock');
 document.addEventListener('click', function click(event) {
     let type = event.target.dataset.type;
 
-    if (type === 'button' || event.target.tagName.toLowerCase() === 'span') {
+    if (type === 'button' || event.target.classList.contains('icon-unlocked') || event.target.classList.contains('icon-lock')) {
         let node = event.target.tagName.toLowerCase() === 'button'
             ? event.target.firstElementChild
             : event.target
@@ -40,6 +40,8 @@ document.addEventListener('click', function click(event) {
         event.target.dataset.tooltip = "скопировано!";
         setTimeout(function () {event.target.dataset.tooltip = "копировать"}, 1000)
     }
+
+    if (type === 'hamburger') showMobileMenu()
 })
 
 function setColor (isInitial) {
@@ -134,7 +136,7 @@ setColor(true)
     window.onscroll = function () {
         let currentScrollPos = window.scrollY;
         
-        if (currentScrollPos > prevScrollPos) {
+        if (currentScrollPos > prevScrollPos && !menu.children[0].classList.contains('menu__wrapper_active')) {
             menu.style.top = '-' + window.getComputedStyle(menu).height;
         } else {
             menu.style.top = '0px';
@@ -160,6 +162,14 @@ function smoothScroll () {
         })
     }
 
+}
+
+function showMobileMenu() {
+    let mobileMenu = document.querySelector('.menu__wrapper');
+    let hamburger = document.querySelector('.hamburger');
+
+    hamburger.classList.toggle('hamburger__active');
+    mobileMenu.classList.toggle('menu__wrapper_active');
 }
 
 smoothScroll()

@@ -41,12 +41,17 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="menu" id="menu">
-                <li class="menu__item"><a href="#colors">Colors</a></li>
-                <li class="menu__item"><a href="#gallery">Gallery</a></li>
-                <li class="menu__item"><a href="#biography">Biography</a></li>
+        <nav class="menu" id="menu">
+            <ul class="menu__wrapper" data-type="hamburger">
+                <li class="menu__item" data-type="hamburger"><a data-type="hamburger" href="#colors">Colors</a></li>
+                <li class="menu__item" data-type="hamburger"><a data-type="hamburger" href="#gallery">Gallery</a></li>
+                <li class="menu__item" data-type="hamburger"><a data-type="hamburger" href="#biography">Biography</a></li>
             </ul>
+            <div class="hamburger" data-type="hamburger">
+                <span data-type="hamburger"></span>
+                <span data-type="hamburger"></span>
+                <span data-type="hamburger"></span>
+            </div>
         </nav>
     </header>
     <section class="promo">

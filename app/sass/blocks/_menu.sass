@@ -12,7 +12,7 @@
     height: 61px
     &__item
         margin: 0 30px
-        flex-basis: 120px
+        flex-basis: 0px
         //text
         text-align: center
         font-size: 1.3em
@@ -26,4 +26,36 @@
                 text-shadow: 0 0 1px #ffffff
                 text-shadow: 0 0 2px #fffdfdea
                 text-shadow: 0 0 5px #ecf9ff
+
+
+.menu__wrapper
+    display: flex
+    transition: 0.5s all
+    z-index: 10
+
+.hamburger
+    padding: 10px
+    width: 50px
+    height: 40px
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    z-index: 10
+    transition: 0.5s all
+    span
+        height: 2px
+        width: 100%
+        background: #000000
+        transition: 0.5s all
+    &__active
+        margin-top: 10px
+        transition: 0.5s margin
+        span
+            background: #ffffff
+            &:nth-child(1)
+                transform: translateY(12px) rotate(45deg)
+            &:nth-child(3)
+                transform: translateY(-6px) rotate(-45deg)
+            &:nth-child(2)
+                opacity: 0
     

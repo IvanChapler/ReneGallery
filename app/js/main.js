@@ -135,8 +135,8 @@ setColor(true)
 
     window.onscroll = function () {
         let currentScrollPos = window.scrollY;
-        
-        if (currentScrollPos > prevScrollPos && !menu.children[0].classList.contains('menu__wrapper_active')) {
+        console.log(window.scrollY)
+        if (currentScrollPos > prevScrollPos) {
             menu.style.top = '-' + window.getComputedStyle(menu).height;
         } else {
             menu.style.top = '0px';
